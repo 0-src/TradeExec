@@ -34,8 +34,10 @@
                 <TextBlock FontSize="24" 
                            FontWeight="SemiBold" 
                            Foreground="White" 
-                           Margin="10,10,0,0">
-                    <TextBlock Text="Trade" Foreground="#6B9AFF"/>Exec<TextBlock Text="." Foreground="#6B9AFF"/>
+                           Margin="10,10,0,0"
+                           FontFamily="{StaticResource LeagueSpartan}"
+                           VerticalAlignment="Center">
+                    <TextBlock Text="Trade" Foreground="#6B9AFF"/>Exec<TextBlock Text="." Foreground="#6B9AFF" FontSize="30"/>
                 </TextBlock>
             </StackPanel>
 

@@ -23,6 +23,7 @@ Extra/*
 
 Services/*
 
+*.config
 
 # Build results
 [Dd]ebug/
