@@ -1,0 +1,3651 @@
+{
+  "name": "Dashboard",
+  "type": "SECTION",
+  "width": 990,
+  "height": 2440,
+  "children": [
+    {
+      "name": "Dashboard/Support",
+      "type": "COMPONENT",
+      "width": 950,
+      "height": 585,
+      "layoutMode": "NONE",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.10747966170310974,
+            "g": 0.12133260071277618,
+            "b": 0.14903846383094788,
+            "a": 1,
+            "hex": "#1b1f26"
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "Inside",
+          "type": "GROUP",
+          "width": 868,
+          "height": 552,
+          "children": [
+            {
+              "name": "InsideFrame",
+              "type": "RECTANGLE",
+              "width": 868,
+              "height": 552,
+              "cornerRadius": 20,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0.5,
+                  "color": {
+                    "r": 0.12999260425567627,
+                    "g": 0.14456842839717865,
+                    "b": 0.17788460850715637,
+                    "a": 0.5,
+                    "hex": "#21252d80"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.18039216101169586,
+                    "g": 0.20392157137393951,
+                    "b": 0.250980406999588,
+                    "a": 1,
+                    "hex": "#2e3440"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "SendBttn",
+              "type": "GROUP",
+              "width": 281,
+              "height": 35,
+              "children": [
+                {
+                  "name": "BttnFrame",
+                  "type": "RECTANGLE",
+                  "width": 281,
+                  "height": 35,
+                  "cornerRadius": 5,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.21662351489067078,
+                        "g": 0.4341222643852234,
+                        "b": 0.682692289352417,
+                        "a": 1,
+                        "hex": "#376fae"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "BttnText",
+                  "type": "TEXT",
+                  "width": 281,
+                  "height": 33,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "Send Ticket",
+                  "fontSize": 14,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "SemiBold"
+                  },
+                  "fontWeight": 600,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "CENTER",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "TextBox",
+              "type": "GROUP",
+              "width": 636,
+              "height": 300,
+              "children": [
+                {
+                  "name": "TextBox",
+                  "type": "RECTANGLE",
+                  "width": 636,
+                  "height": 300,
+                  "cornerRadius": 5,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "PlaceholderText",
+                  "type": "TEXT",
+                  "width": 614,
+                  "height": 280,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 0.5,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 0.5,
+                        "hex": "#ffffff80"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "Enter details of your issue...",
+                  "fontSize": 14,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Regular"
+                  },
+                  "fontWeight": 400,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "FrameTitle",
+              "type": "TEXT",
+              "width": 83,
+              "height": 22,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1,
+                    "hex": "#ffffff"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Support",
+              "fontSize": 24,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "SemiBold"
+              },
+              "fontWeight": 600,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "CENTER",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "Outside",
+          "type": "GROUP",
+          "width": 938,
+          "height": 341,
+          "children": [
+            {
+              "name": "SideBar",
+              "type": "GROUP",
+              "width": 170,
+              "height": 199,
+              "children": [
+                {
+                  "name": "Buttons",
+                  "type": "GROUP",
+                  "width": 170,
+                  "height": 199,
+                  "children": [
+                    {
+                      "name": "Support",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 55
+                    },
+                    {
+                      "name": "Main",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 115
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Text",
+              "type": "GROUP",
+              "width": 149,
+              "height": 100.75,
+              "children": [
+                {
+                  "name": "Spacer",
+                  "type": "VECTOR",
+                  "width": 120,
+                  "height": 0,
+                  "strokes": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.8470588326454163,
+                        "g": 0.8705882430076599,
+                        "b": 0.9137254953384399,
+                        "a": 1,
+                        "hex": "#d8dee9"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 0.5,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "ROUND",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "Welcome",
+                  "type": "TEXT",
+                  "width": 149,
+                  "height": 50,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "\nWelcome, {User}",
+                  "fontSize": 14,
+                  "fontName": "Symbol(figma.mixed)",
+                  "fontWeight": "Symbol(figma.mixed)",
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "Title",
+                  "type": "TEXT",
+                  "width": 71,
+                  "height": 30,
+                  "fills": "Symbol(figma.mixed)",
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "TradeExec.\n",
+                  "fontSize": "Symbol(figma.mixed)",
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "SemiBold"
+                  },
+                  "fontWeight": 600,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "Controls",
+              "type": "GROUP",
+              "width": 47,
+              "height": 16,
+              "children": [
+                {
+                  "name": "ExitBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "8389ecabcdb75e96cf5a3f7aee54d3118855ac2d",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "MinimizeBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "0ed5448c5567739294e789e1c22e6bee0a6b4b0e",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dashboard/Accounts",
+      "type": "COMPONENT",
+      "width": 950,
+      "height": 585,
+      "layoutMode": "NONE",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.10747966170310974,
+            "g": 0.12133260071277618,
+            "b": 0.14903846383094788,
+            "a": 1,
+            "hex": "#1b1f26"
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "Inside",
+          "type": "GROUP",
+          "width": 868,
+          "height": 552,
+          "children": [
+            {
+              "name": "InsideFrame",
+              "type": "RECTANGLE",
+              "width": 868,
+              "height": 552,
+              "cornerRadius": 20,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0.5,
+                  "color": {
+                    "r": 0.12999260425567627,
+                    "g": 0.14456842839717865,
+                    "b": 0.17788460850715637,
+                    "a": 0.5,
+                    "hex": "#21252d80"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.18039216101169586,
+                    "g": 0.20392157137393951,
+                    "b": 0.250980406999588,
+                    "a": 1,
+                    "hex": "#2e3440"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "AccountsFrame",
+              "type": "GROUP",
+              "width": 754,
+              "height": 480,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 754,
+                  "height": 480,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "AccountFrame-3",
+                  "type": "GROUP",
+                  "width": 706,
+                  "height": 45,
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "type": "RECTANGLE",
+                      "width": 700,
+                      "height": 45,
+                      "cornerRadius": 5,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 0.05999999865889549,
+                          "color": {
+                            "r": 0.8509804010391235,
+                            "g": 0.8509804010391235,
+                            "b": 0.8509804010391235,
+                            "a": 0.05999999865889549,
+                            "hex": "#d9d9d90f"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "effects": [
+                        {
+                          "type": "DROP_SHADOW",
+                          "radius": 4,
+                          "spread": 0,
+                          "offset": {
+                            "x": 1,
+                            "y": 4
+                          },
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0.25,
+                            "hex": "#00000040"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "EditBttn",
+                      "type": "GROUP",
+                      "width": 76,
+                      "height": 31
+                    },
+                    {
+                      "name": "DelBttn",
+                      "type": "GROUP",
+                      "width": 76,
+                      "height": 31
+                    },
+                    {
+                      "name": "AccountStrategy",
+                      "type": "TEXT",
+                      "width": 191,
+                      "height": 44,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "SAMPLE_STRAT",
+                      "fontSize": 20,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "CENTER",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "AccountName",
+                      "type": "TEXT",
+                      "width": 275,
+                      "height": 45,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "SAMPLE_ACCOUNT003",
+                      "fontSize": 20,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "CENTER",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "Activate_Checkmark[Checked]",
+                      "type": "RECTANGLE",
+                      "width": 18,
+                      "height": 18,
+                      "cornerRadius": 5,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "5c8d4f30af8db2bed4436bbd1d196f2bf9f69dab",
+                          "scaleMode": "FIT",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                },
+                {
+                  "name": "AccountFrame-2",
+                  "type": "GROUP",
+                  "width": 706,
+                  "height": 45,
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "type": "RECTANGLE",
+                      "width": 700,
+                      "height": 45,
+                      "cornerRadius": 5,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 0.05999999865889549,
+                          "color": {
+                            "r": 0.8509804010391235,
+                            "g": 0.8509804010391235,
+                            "b": 0.8509804010391235,
+                            "a": 0.05999999865889549,
+                            "hex": "#d9d9d90f"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "effects": [
+                        {
+                          "type": "DROP_SHADOW",
+                          "radius": 4,
+                          "spread": 0,
+                          "offset": {
+                            "x": 1,
+                            "y": 4
+                          },
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0.25,
+                            "hex": "#00000040"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "EditBttn",
+                      "type": "GROUP",
+                      "width": 76,
+                      "height": 31
+                    },
+                    {
+                      "name": "DelBttn",
+                      "type": "GROUP",
+                      "width": 76,
+                      "height": 31
+                    },
+                    {
+                      "name": "AccountStrategy",
+                      "type": "TEXT",
+                      "width": 191,
+                      "height": 44,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "SAMPLE_STRAT",
+                      "fontSize": 20,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "CENTER",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "AccountName",
+                      "type": "TEXT",
+                      "width": 275,
+                      "height": 45,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "SAMPLE_ACCOUNT002",
+                      "fontSize": 20,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "CENTER",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "Activate_Checkmark[Checked]",
+                      "type": "RECTANGLE",
+                      "width": 18,
+                      "height": 18,
+                      "cornerRadius": 5,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "2a63c39cfb913921efe8a13a765f3809c9015572",
+                          "scaleMode": "FIT",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                },
+                {
+                  "name": "AccountFrame-1",
+                  "type": "GROUP",
+                  "width": 706,
+                  "height": 45,
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "type": "RECTANGLE",
+                      "width": 700,
+                      "height": 45,
+                      "cornerRadius": 5,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 0.05999999865889549,
+                          "color": {
+                            "r": 0.8509804010391235,
+                            "g": 0.8509804010391235,
+                            "b": 0.8509804010391235,
+                            "a": 0.05999999865889549,
+                            "hex": "#d9d9d90f"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "effects": [
+                        {
+                          "type": "DROP_SHADOW",
+                          "radius": 4,
+                          "spread": 0,
+                          "offset": {
+                            "x": 1,
+                            "y": 4
+                          },
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0.25,
+                            "hex": "#00000040"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "EditBttn",
+                      "type": "GROUP",
+                      "width": 76,
+                      "height": 31
+                    },
+                    {
+                      "name": "DelBttn",
+                      "type": "GROUP",
+                      "width": 76,
+                      "height": 31
+                    },
+                    {
+                      "name": "AccountStrategy",
+                      "type": "TEXT",
+                      "width": 191,
+                      "height": 44,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "SAMPLE_STRAT",
+                      "fontSize": 20,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "CENTER",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "AccountName",
+                      "type": "TEXT",
+                      "width": 275,
+                      "height": 45,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "SAMPLE_ACCOUNT001",
+                      "fontSize": 20,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "CENTER",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "Activate_Checkmark[Checked]",
+                      "type": "RECTANGLE",
+                      "width": 18,
+                      "height": 18,
+                      "cornerRadius": 5,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "5c8d4f30af8db2bed4436bbd1d196f2bf9f69dab",
+                          "scaleMode": "FIT",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                },
+                {
+                  "name": "Separator",
+                  "type": "VECTOR",
+                  "width": 728,
+                  "height": 0,
+                  "strokes": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "ROUND",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "Title",
+                  "type": "GROUP",
+                  "width": 227,
+                  "height": 29,
+                  "children": [
+                    {
+                      "name": "Icon",
+                      "type": "RECTANGLE",
+                      "width": 18,
+                      "height": 18,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "2aa891d9dbbd69e83969d0c17eed596805761d9c",
+                          "scaleMode": "FILL",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "CardTitle",
+                      "type": "TEXT",
+                      "width": 200,
+                      "height": 29,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "Accounts",
+                      "fontSize": 24,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "CENTER",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Outside",
+          "type": "GROUP",
+          "width": 938,
+          "height": 341,
+          "children": [
+            {
+              "name": "SideBar",
+              "type": "GROUP",
+              "width": 170,
+              "height": 199,
+              "children": [
+                {
+                  "name": "Buttons",
+                  "type": "GROUP",
+                  "width": 170,
+                  "height": 199,
+                  "children": [
+                    {
+                      "name": "Support",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 55
+                    },
+                    {
+                      "name": "Main",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 115
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Text",
+              "type": "GROUP",
+              "width": 149,
+              "height": 100.75,
+              "children": [
+                {
+                  "name": "Spacer",
+                  "type": "VECTOR",
+                  "width": 120,
+                  "height": 0,
+                  "strokes": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.8470588326454163,
+                        "g": 0.8705882430076599,
+                        "b": 0.9137254953384399,
+                        "a": 1,
+                        "hex": "#d8dee9"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 0.5,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "ROUND",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "Welcome",
+                  "type": "TEXT",
+                  "width": 149,
+                  "height": 50,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "\nWelcome, {User}",
+                  "fontSize": 14,
+                  "fontName": "Symbol(figma.mixed)",
+                  "fontWeight": "Symbol(figma.mixed)",
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "Title",
+                  "type": "TEXT",
+                  "width": 71,
+                  "height": 30,
+                  "fills": "Symbol(figma.mixed)",
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "TradeExec.\n",
+                  "fontSize": "Symbol(figma.mixed)",
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "SemiBold"
+                  },
+                  "fontWeight": 600,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "Controls",
+              "type": "GROUP",
+              "width": 47,
+              "height": 16,
+              "children": [
+                {
+                  "name": "ExitBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "8389ecabcdb75e96cf5a3f7aee54d3118855ac2d",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "MinimizeBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "0ed5448c5567739294e789e1c22e6bee0a6b4b0e",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dashboard/Server Status",
+      "type": "COMPONENT",
+      "width": 950,
+      "height": 585,
+      "layoutMode": "NONE",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.10747966170310974,
+            "g": 0.12133260071277618,
+            "b": 0.14903846383094788,
+            "a": 1,
+            "hex": "#1b1f26"
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "Inside",
+          "type": "GROUP",
+          "width": 868,
+          "height": 552,
+          "children": [
+            {
+              "name": "InsideFrame",
+              "type": "RECTANGLE",
+              "width": 868,
+              "height": 552,
+              "cornerRadius": 20,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0.5,
+                  "color": {
+                    "r": 0.12999260425567627,
+                    "g": 0.14456842839717865,
+                    "b": 0.17788460850715637,
+                    "a": 0.5,
+                    "hex": "#21252d80"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.18039216101169586,
+                    "g": 0.20392157137393951,
+                    "b": 0.250980406999588,
+                    "a": 1,
+                    "hex": "#2e3440"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "TunnelCard",
+              "type": "GROUP",
+              "width": 430,
+              "height": 83,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 430,
+                  "height": 83,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Body",
+                  "type": "GROUP",
+                  "width": 244,
+                  "height": 13.438095092773438,
+                  "children": [
+                    {
+                      "name": "BodyText",
+                      "type": "TEXT",
+                      "width": 244,
+                      "height": 13.438095092773438,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "https://sample.ngrok.io",
+                      "fontSize": 18,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Regular"
+                      },
+                      "fontWeight": 400,
+                      "letterSpacing": "Symbol(figma.mixed)",
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    }
+                  ]
+                },
+                {
+                  "name": "Title",
+                  "type": "GROUP",
+                  "width": 170,
+                  "height": 10.276190757751465,
+                  "children": [
+                    {
+                      "name": "CardTitle",
+                      "type": "TEXT",
+                      "width": 158,
+                      "height": 10.276190757751465,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "Tunnel Information",
+                      "fontSize": 14,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "Title_Image",
+                      "type": "ELLIPSE",
+                      "width": 7.112698078155518,
+                      "height": 7.112698078155518,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "30e866e4947afceee599fcdc05357d5614d137df",
+                          "scaleMode": "FILL",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "MetricsCard",
+              "type": "GROUP",
+              "width": 350,
+              "height": 209,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 350,
+                  "height": 209,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Body",
+                  "type": "GROUP",
+                  "width": 215,
+                  "height": 140,
+                  "children": [
+                    {
+                      "name": "BodyText",
+                      "type": "TEXT",
+                      "width": 215,
+                      "height": 140,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "Requests: 24\n\n\nResponse Time: 17 ms\n\n\nStatus: 200 OK\n",
+                      "fontSize": 18,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Regular"
+                      },
+                      "fontWeight": 400,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    }
+                  ]
+                },
+                {
+                  "name": "Title",
+                  "type": "GROUP",
+                  "width": 170,
+                  "height": 13,
+                  "children": [
+                    {
+                      "name": "CardTitle",
+                      "type": "TEXT",
+                      "width": 158,
+                      "height": 13,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "API Metrics",
+                      "fontSize": 14,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "HEIGHT",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "Title_Image",
+                      "type": "ELLIPSE",
+                      "width": 8,
+                      "height": 8,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "77887cea3a1930295424a910bf3c6a1bb3f04db6",
+                          "scaleMode": "FILL",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "UpTimeCard",
+              "type": "GROUP",
+              "width": 430,
+              "height": 105,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 430,
+                  "height": 105,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Body",
+                  "type": "GROUP",
+                  "width": 244,
+                  "height": 17,
+                  "children": [
+                    {
+                      "name": "BodyText",
+                      "type": "TEXT",
+                      "width": 244,
+                      "height": 17,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "3 hours, 40 minutes, 10 seconds",
+                      "fontSize": 18,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Regular"
+                      },
+                      "fontWeight": 400,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "NONE",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    }
+                  ]
+                },
+                {
+                  "name": "Title",
+                  "type": "GROUP",
+                  "width": 170,
+                  "height": 13,
+                  "children": [
+                    {
+                      "name": "CardTitle",
+                      "type": "TEXT",
+                      "width": 158,
+                      "height": 13,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "Server Up-Time",
+                      "fontSize": 14,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "HEIGHT",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "Title_Image",
+                      "type": "ELLIPSE",
+                      "width": 8,
+                      "height": 8,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "30e866e4947afceee599fcdc05357d5614d137df",
+                          "scaleMode": "FILL",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ConnectionCard",
+              "type": "GROUP",
+              "width": 200,
+              "height": 105,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 200,
+                  "height": 105,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Body",
+                  "type": "GROUP",
+                  "width": 93,
+                  "height": 50,
+                  "children": [
+                    {
+                      "name": "SubText",
+                      "type": "TEXT",
+                      "width": 93,
+                      "height": 11,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 0.6057692170143127,
+                            "g": 0.5912074446678162,
+                            "b": 0.5912074446678162,
+                            "a": 1,
+                            "hex": "#9a9797"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "Ping: 48ms",
+                      "fontSize": 12,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "ExtraLight"
+                      },
+                      "fontWeight": 200,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "LEFT",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "HEIGHT",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "BodyText",
+                      "type": "TEXT",
+                      "width": 79,
+                      "height": 17,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "Connected",
+                      "fontSize": 18,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Regular"
+                      },
+                      "fontWeight": 400,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "CENTER",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "HEIGHT",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "BodyIcon",
+                      "type": "ELLIPSE",
+                      "width": 6,
+                      "height": 6,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 0.23137255012989044,
+                            "g": 0.6980392336845398,
+                            "b": 0.6666666865348816,
+                            "a": 1,
+                            "hex": "#3bb2aa"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                },
+                {
+                  "name": "Title",
+                  "type": "GROUP",
+                  "width": 158,
+                  "height": 13,
+                  "children": [
+                    {
+                      "name": "CardTitle",
+                      "type": "TEXT",
+                      "width": 158,
+                      "height": 13,
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "OUTSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "characters": "Connection Status",
+                      "fontSize": 14,
+                      "fontName": {
+                        "family": "League Spartan",
+                        "style": "Light"
+                      },
+                      "fontWeight": 300,
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 0
+                      },
+                      "lineHeight": {
+                        "unit": "AUTO"
+                      },
+                      "textAlignHorizontal": "CENTER",
+                      "textAlignVertical": "TOP",
+                      "textAutoResize": "HEIGHT",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE"
+                    },
+                    {
+                      "name": "Title_Image",
+                      "type": "ELLIPSE",
+                      "width": 8,
+                      "height": 8,
+                      "fills": [
+                        {
+                          "type": "IMAGE",
+                          "opacity": 1,
+                          "imageHash": "236dc631152144e057145670db8364dd4cc3170d",
+                          "scaleMode": "FILL",
+                          "imageTransform": [
+                            [
+                              1,
+                              0,
+                              0
+                            ],
+                            [
+                              0,
+                              1,
+                              0
+                            ]
+                          ]
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Outside",
+          "type": "GROUP",
+          "width": 938,
+          "height": 341,
+          "children": [
+            {
+              "name": "SideBar",
+              "type": "GROUP",
+              "width": 170,
+              "height": 199,
+              "children": [
+                {
+                  "name": "Buttons",
+                  "type": "GROUP",
+                  "width": 170,
+                  "height": 199,
+                  "children": [
+                    {
+                      "name": "Support",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 55
+                    },
+                    {
+                      "name": "Main",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 115
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Text",
+              "type": "GROUP",
+              "width": 149,
+              "height": 100.75,
+              "children": [
+                {
+                  "name": "Spacer",
+                  "type": "VECTOR",
+                  "width": 120,
+                  "height": 0,
+                  "strokes": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.8470588326454163,
+                        "g": 0.8705882430076599,
+                        "b": 0.9137254953384399,
+                        "a": 1,
+                        "hex": "#d8dee9"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 0.5,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "ROUND",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "Welcome",
+                  "type": "TEXT",
+                  "width": 149,
+                  "height": 50,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "\nWelcome, {User}",
+                  "fontSize": 14,
+                  "fontName": "Symbol(figma.mixed)",
+                  "fontWeight": "Symbol(figma.mixed)",
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "Title",
+                  "type": "TEXT",
+                  "width": 71,
+                  "height": 30,
+                  "fills": "Symbol(figma.mixed)",
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "TradeExec.\n",
+                  "fontSize": "Symbol(figma.mixed)",
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "SemiBold"
+                  },
+                  "fontWeight": 600,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "Controls",
+              "type": "GROUP",
+              "width": 47,
+              "height": 16,
+              "children": [
+                {
+                  "name": "ExitBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "8389ecabcdb75e96cf5a3f7aee54d3118855ac2d",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "MinimizeBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "0ed5448c5567739294e789e1c22e6bee0a6b4b0e",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dashboard/Default",
+      "type": "COMPONENT",
+      "width": 950,
+      "height": 585,
+      "layoutMode": "NONE",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.10747966170310974,
+            "g": 0.12133260071277618,
+            "b": 0.14903846383094788,
+            "a": 1,
+            "hex": "#1b1f26"
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "Inside",
+          "type": "GROUP",
+          "width": 868,
+          "height": 552,
+          "children": [
+            {
+              "name": "InsideFrame",
+              "type": "RECTANGLE",
+              "width": 868,
+              "height": 552,
+              "cornerRadius": 20,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0.5,
+                  "color": {
+                    "r": 0.12999260425567627,
+                    "g": 0.14456842839717865,
+                    "b": 0.17788460850715637,
+                    "a": 0.5,
+                    "hex": "#21252d80"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.18039216101169586,
+                    "g": 0.20392157137393951,
+                    "b": 0.250980406999588,
+                    "a": 1,
+                    "hex": "#2e3440"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "LogCard",
+              "type": "GROUP",
+              "width": 715,
+              "height": 200,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 715,
+                  "height": 200,
+                  "cornerRadius": 5,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Log_BOX",
+                  "type": "TEXT",
+                  "width": 682,
+                  "height": 194,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "[00:00:00] New Strat1 Order: ...\n[00:00:00] New Strat2 Order: ...\n[00:00:00] New Strat2 Order: ...\n[00:00:00] New Strat2 Order: ...\n[00:00:00] New Strat1 Order: ...\n[08:02:32] New Strat1 Order: 5 MNQ MKT Buy @ 18,938.25\n[08:02:56] New Strat1 Order: 5 MNQ MKT Sell @ 18,994.25\n[08:05:37] New Strat2 Order: 1 NQ MKT Sell @ 18,938.25\n[08:07:32] New Strat1 Order: ...\n[08:04:32] New Strat2 Order: ...\n[08:12:32] New Strat2 Order: ...\n[08:52:32] New Strat2 Order: ...\n[08:59:32] New Strat1 Order: ...\n",
+                  "fontSize": 12,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Regular"
+                  },
+                  "fontWeight": 400,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 15
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "AccCard",
+              "type": "GROUP",
+              "width": 715,
+              "height": 85,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 715,
+                  "height": 85,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "BodyText",
+                  "type": "TEXT",
+                  "width": 690,
+                  "height": 50,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "Account1 - Strat1                         Account3 - Strat1\nAccount2 - Strat2                       Account4-Strat1",
+                  "fontSize": 16,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Regular"
+                  },
+                  "fontWeight": 400,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 25
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "CardTitle",
+                  "type": "TEXT",
+                  "width": 78,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "Active Accounts",
+                  "fontSize": 12,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Light"
+                  },
+                  "fontWeight": 300,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "WebCard",
+              "type": "GROUP",
+              "width": 427,
+              "height": 85,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 427,
+                  "height": 85,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "BodyText",
+                  "type": "TEXT",
+                  "width": 254.11708068847656,
+                  "height": 50,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "https://sample.ngrok.io\nlocalhost:2942",
+                  "fontSize": 20,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Regular"
+                  },
+                  "fontWeight": 400,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 25
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "CardTitle",
+                  "type": "TEXT",
+                  "width": 99.98048400878906,
+                  "height": 11,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "Web Connection",
+                  "fontSize": 12,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Light"
+                  },
+                  "fontWeight": 300,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "PnlCard",
+              "type": "GROUP",
+              "width": 205,
+              "height": 85,
+              "children": [
+                {
+                  "name": "CardFrame",
+                  "type": "RECTANGLE",
+                  "width": 205,
+                  "height": 85,
+                  "cornerRadius": 15,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.12156862765550613,
+                        "b": 0.14901961386203766,
+                        "a": 1,
+                        "hex": "#1b1f26"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "effects": [
+                    {
+                      "type": "DROP_SHADOW",
+                      "radius": 5,
+                      "spread": 0,
+                      "offset": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "color": {
+                        "r": 0.18039216101169586,
+                        "g": 0.20392157137393951,
+                        "b": 0.250980406999588,
+                        "a": 0.5,
+                        "hex": "#2e344080"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "BodyText",
+                  "type": "TEXT",
+                  "width": 122,
+                  "height": 18,
+                  "fills": "Symbol(figma.mixed)",
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "$ -1,000",
+                  "fontSize": 20,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Regular"
+                  },
+                  "fontWeight": 400,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "CardTitle",
+                  "type": "TEXT",
+                  "width": 56,
+                  "height": 11,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "Today’s Pnl:",
+                  "fontSize": 12,
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "Light"
+                  },
+                  "fontWeight": 300,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Outside",
+          "type": "GROUP",
+          "width": 938,
+          "height": 341,
+          "children": [
+            {
+              "name": "SideBar",
+              "type": "GROUP",
+              "width": 170,
+              "height": 199,
+              "children": [
+                {
+                  "name": "Buttons",
+                  "type": "GROUP",
+                  "width": 170,
+                  "height": 199,
+                  "children": [
+                    {
+                      "name": "Support",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 55
+                    },
+                    {
+                      "name": "Main",
+                      "type": "GROUP",
+                      "width": 170,
+                      "height": 115
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Text",
+              "type": "GROUP",
+              "width": 149,
+              "height": 100.75,
+              "children": [
+                {
+                  "name": "Spacer",
+                  "type": "VECTOR",
+                  "width": 120,
+                  "height": 0,
+                  "strokes": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.8470588326454163,
+                        "g": 0.8705882430076599,
+                        "b": 0.9137254953384399,
+                        "a": 1,
+                        "hex": "#d8dee9"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 0.5,
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "ROUND",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "Welcome",
+                  "type": "TEXT",
+                  "width": 149,
+                  "height": 50,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "\nWelcome, {User}",
+                  "fontSize": 14,
+                  "fontName": "Symbol(figma.mixed)",
+                  "fontWeight": "Symbol(figma.mixed)",
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "NONE",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "Title",
+                  "type": "TEXT",
+                  "width": 71,
+                  "height": 30,
+                  "fills": "Symbol(figma.mixed)",
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "TradeExec.\n",
+                  "fontSize": "Symbol(figma.mixed)",
+                  "fontName": {
+                    "family": "League Spartan",
+                    "style": "SemiBold"
+                  },
+                  "fontWeight": 600,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "Controls",
+              "type": "GROUP",
+              "width": 47,
+              "height": 16,
+              "children": [
+                {
+                  "name": "ExitBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "8389ecabcdb75e96cf5a3f7aee54d3118855ac2d",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                },
+                {
+                  "name": "MinimizeBttn",
+                  "type": "ELLIPSE",
+                  "width": 16,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "IMAGE",
+                      "opacity": 1,
+                      "imageHash": "0ed5448c5567739294e789e1c22e6bee0a6b4b0e",
+                      "scaleMode": "FILL",
+                      "imageTransform": [
+                        [
+                          1,
+                          0,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          0
+                        ]
+                      ]
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textContent": [
+    {
+      "name": "BttnText",
+      "text": "Send Ticket",
+      "path": "Dashboard/Dashboard/Support/Inside/SendBttn/BttnText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "PlaceholderText",
+      "text": "Enter details of your issue...",
+      "path": "Dashboard/Dashboard/Support/Inside/TextBox/PlaceholderText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "FrameTitle",
+      "text": "Support",
+      "path": "Dashboard/Dashboard/Support/Inside/FrameTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nSend Ticket",
+      "path": "Dashboard/Dashboard/Support/Outside/SideBar/Buttons/Support/TicketBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Support",
+      "path": "Dashboard/Dashboard/Support/Outside/SideBar/Buttons/Support/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Accounts",
+      "path": "Dashboard/Dashboard/Support/Outside/SideBar/Buttons/Main/AccountsBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Server Status\n",
+      "path": "Dashboard/Dashboard/Support/Outside/SideBar/Buttons/Main/ServerBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nDashboard",
+      "path": "Dashboard/Dashboard/Support/Outside/SideBar/Buttons/Main/DashboardBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Main Menu",
+      "path": "Dashboard/Dashboard/Support/Outside/SideBar/Buttons/Main/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Welcome",
+      "text": "\nWelcome, {User}",
+      "path": "Dashboard/Dashboard/Support/Outside/Text/Welcome",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Title",
+      "text": "TradeExec.\n",
+      "path": "Dashboard/Dashboard/Support/Outside/Text/Title",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BttnText",
+      "text": "Edit",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-3/EditBttn/BttnText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BttnText",
+      "text": "Delete",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-3/DelBttn/BttnText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "AccountStrategy",
+      "text": "SAMPLE_STRAT",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-3/AccountStrategy",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "AccountName",
+      "text": "SAMPLE_ACCOUNT003",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-3/AccountName",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BttnText",
+      "text": "Edit",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-2/EditBttn/BttnText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BttnText",
+      "text": "Delete",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-2/DelBttn/BttnText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "AccountStrategy",
+      "text": "SAMPLE_STRAT",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-2/AccountStrategy",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "AccountName",
+      "text": "SAMPLE_ACCOUNT002",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-2/AccountName",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BttnText",
+      "text": "Edit",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-1/EditBttn/BttnText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BttnText",
+      "text": "Delete",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-1/DelBttn/BttnText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "AccountStrategy",
+      "text": "SAMPLE_STRAT",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-1/AccountStrategy",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "AccountName",
+      "text": "SAMPLE_ACCOUNT001",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/AccountFrame-1/AccountName",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "Accounts",
+      "path": "Dashboard/Dashboard/Accounts/Inside/AccountsFrame/Title/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nSend Ticket",
+      "path": "Dashboard/Dashboard/Accounts/Outside/SideBar/Buttons/Support/TicketBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Support",
+      "path": "Dashboard/Dashboard/Accounts/Outside/SideBar/Buttons/Support/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Accounts",
+      "path": "Dashboard/Dashboard/Accounts/Outside/SideBar/Buttons/Main/AccountsBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Server Status\n",
+      "path": "Dashboard/Dashboard/Accounts/Outside/SideBar/Buttons/Main/ServerBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nDashboard",
+      "path": "Dashboard/Dashboard/Accounts/Outside/SideBar/Buttons/Main/DashboardBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Main Menu",
+      "path": "Dashboard/Dashboard/Accounts/Outside/SideBar/Buttons/Main/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Welcome",
+      "text": "\nWelcome, {User}",
+      "path": "Dashboard/Dashboard/Accounts/Outside/Text/Welcome",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Title",
+      "text": "TradeExec.\n",
+      "path": "Dashboard/Dashboard/Accounts/Outside/Text/Title",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BodyText",
+      "text": "https://sample.ngrok.io",
+      "path": "Dashboard/Dashboard/Server Status/Inside/TunnelCard/Body/BodyText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "Tunnel Information",
+      "path": "Dashboard/Dashboard/Server Status/Inside/TunnelCard/Title/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BodyText",
+      "text": "Requests: 24\n\n\nResponse Time: 17 ms\n\n\nStatus: 200 OK\n",
+      "path": "Dashboard/Dashboard/Server Status/Inside/MetricsCard/Body/BodyText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "API Metrics",
+      "path": "Dashboard/Dashboard/Server Status/Inside/MetricsCard/Title/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BodyText",
+      "text": "3 hours, 40 minutes, 10 seconds",
+      "path": "Dashboard/Dashboard/Server Status/Inside/UpTimeCard/Body/BodyText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "Server Up-Time",
+      "path": "Dashboard/Dashboard/Server Status/Inside/UpTimeCard/Title/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SubText",
+      "text": "Ping: 48ms",
+      "path": "Dashboard/Dashboard/Server Status/Inside/ConnectionCard/Body/SubText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BodyText",
+      "text": "Connected",
+      "path": "Dashboard/Dashboard/Server Status/Inside/ConnectionCard/Body/BodyText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "Connection Status",
+      "path": "Dashboard/Dashboard/Server Status/Inside/ConnectionCard/Title/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nSend Ticket",
+      "path": "Dashboard/Dashboard/Server Status/Outside/SideBar/Buttons/Support/TicketBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Support",
+      "path": "Dashboard/Dashboard/Server Status/Outside/SideBar/Buttons/Support/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Accounts",
+      "path": "Dashboard/Dashboard/Server Status/Outside/SideBar/Buttons/Main/AccountsBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Server Status\n",
+      "path": "Dashboard/Dashboard/Server Status/Outside/SideBar/Buttons/Main/ServerBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nDashboard",
+      "path": "Dashboard/Dashboard/Server Status/Outside/SideBar/Buttons/Main/DashboardBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Main Menu",
+      "path": "Dashboard/Dashboard/Server Status/Outside/SideBar/Buttons/Main/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Welcome",
+      "text": "\nWelcome, {User}",
+      "path": "Dashboard/Dashboard/Server Status/Outside/Text/Welcome",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Title",
+      "text": "TradeExec.\n",
+      "path": "Dashboard/Dashboard/Server Status/Outside/Text/Title",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Log_BOX",
+      "text": "[00:00:00] New Strat1 Order: ...\n[00:00:00] New Strat2 Order: ...\n[00:00:00] New Strat2 Order: ...\n[00:00:00] New Strat2 Order: ...\n[00:00:00] New Strat1 Order: ...\n[08:02:32] New Strat1 Order: 5 MNQ MKT Buy @ 18,938.25\n[08:02:56] New Strat1 Order: 5 MNQ MKT Sell @ 18,994.25\n[08:05:37] New Strat2 Order: 1 NQ MKT Sell @ 18,938.25\n[08:07:32] New Strat1 Order: ...\n[08:04:32] New Strat2 Order: ...\n[08:12:32] New Strat2 Order: ...\n[08:52:32] New Strat2 Order: ...\n[08:59:32] New Strat1 Order: ...\n",
+      "path": "Dashboard/Dashboard/Default/Inside/LogCard/Log_BOX",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BodyText",
+      "text": "Account1 - Strat1                         Account3 - Strat1\nAccount2 - Strat2                       Account4-Strat1",
+      "path": "Dashboard/Dashboard/Default/Inside/AccCard/BodyText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "Active Accounts",
+      "path": "Dashboard/Dashboard/Default/Inside/AccCard/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BodyText",
+      "text": "https://sample.ngrok.io\nlocalhost:2942",
+      "path": "Dashboard/Dashboard/Default/Inside/WebCard/BodyText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "Web Connection",
+      "path": "Dashboard/Dashboard/Default/Inside/WebCard/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "BodyText",
+      "text": "$ -1,000",
+      "path": "Dashboard/Dashboard/Default/Inside/PnlCard/BodyText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "CardTitle",
+      "text": "Today’s Pnl:",
+      "path": "Dashboard/Dashboard/Default/Inside/PnlCard/CardTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nSend Ticket",
+      "path": "Dashboard/Dashboard/Default/Outside/SideBar/Buttons/Support/TicketBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Support",
+      "path": "Dashboard/Dashboard/Default/Outside/SideBar/Buttons/Support/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Accounts",
+      "path": "Dashboard/Dashboard/Default/Outside/SideBar/Buttons/Main/AccountsBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\n                         Server Status\n",
+      "path": "Dashboard/Dashboard/Default/Outside/SideBar/Buttons/Main/ServerBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "\nDashboard",
+      "path": "Dashboard/Dashboard/Default/Outside/SideBar/Buttons/Main/DashboardBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Main Menu",
+      "path": "Dashboard/Dashboard/Default/Outside/SideBar/Buttons/Main/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Welcome",
+      "text": "\nWelcome, {User}",
+      "path": "Dashboard/Dashboard/Default/Outside/Text/Welcome",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Title",
+      "text": "TradeExec.\n",
+      "path": "Dashboard/Dashboard/Default/Outside/Text/Title",
+      "nodeType": "TEXT"
+    }
+  ]
+}

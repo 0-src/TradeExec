@@ -1,0 +1,1416 @@
+{
+  "name": "Login",
+  "type": "SECTION",
+  "width": 990,
+  "height": 1230,
+  "children": [
+    {
+      "name": "Login/Create",
+      "type": "COMPONENT",
+      "width": 950,
+      "height": 585,
+      "cornerRadius": 10,
+      "layoutMode": "NONE",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.23137255012989044,
+            "g": 0.30980393290519714,
+            "b": 0.4313725531101227,
+            "a": 1,
+            "hex": "#3b4f6e"
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "Background",
+          "type": "GROUP",
+          "width": 986,
+          "height": 585,
+          "children": [
+            {
+              "name": "Image-With-Gradient",
+              "type": "INSTANCE",
+              "width": 891,
+              "height": 585,
+              "layoutMode": "NONE",
+              "primaryAxisSizingMode": "AUTO",
+              "counterAxisSizingMode": "FIXED",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1,
+                    "hex": "#ffffff"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "mainComponent": {
+                "name": "Image-With-Gradient"
+              }
+            },
+            {
+              "name": "Darken",
+              "type": "RECTANGLE",
+              "width": 950,
+              "height": 585,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0.4399999976158142,
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.4399999976158142,
+                    "hex": "#00000070"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            }
+          ]
+        },
+        {
+          "name": "Change",
+          "type": "GROUP",
+          "width": 163,
+          "height": 35,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "radius": 10,
+              "spread": 0,
+              "offset": {
+                "x": 1,
+                "y": 1
+              },
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.25,
+                "hex": "#00000040"
+              }
+            }
+          ],
+          "children": [
+            {
+              "name": "Button_Change",
+              "type": "RECTANGLE",
+              "width": 163,
+              "height": 35,
+              "cornerRadius": 35,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.3894461989402771,
+                    "g": 0.3947219252586365,
+                    "b": 0.3990384638309479,
+                    "a": 1,
+                    "hex": "#636566"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 4,
+                  "spread": 0,
+                  "offset": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.25,
+                    "hex": "#00000040"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Change Method",
+              "type": "TEXT",
+              "width": 82,
+              "height": 11,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1,
+                    "hex": "#ffffff"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Change Method",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "SemiBold"
+              },
+              "fontWeight": 600,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "type": "GROUP",
+          "width": 163,
+          "height": 35,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "radius": 10,
+              "spread": 0,
+              "offset": {
+                "x": 1,
+                "y": 1
+              },
+              "color": {
+                "r": 0.22745098173618317,
+                "g": 0.6352941393852234,
+                "b": 0.9725490212440491,
+                "a": 0.25,
+                "hex": "#3aa2f840"
+              }
+            }
+          ],
+          "children": [
+            {
+              "name": "Button_Login",
+              "type": "RECTANGLE",
+              "width": 163,
+              "height": 35,
+              "cornerRadius": 35,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.22878143191337585,
+                    "g": 0.6370862722396851,
+                    "b": 0.9711538553237915,
+                    "a": 1,
+                    "hex": "#3aa2f8"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "Create Account",
+              "type": "TEXT",
+              "width": 79,
+              "height": 11,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1,
+                    "hex": "#ffffff"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Create Account",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "SemiBold"
+              },
+              "fontWeight": 600,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "Password",
+          "type": "GROUP",
+          "width": 450,
+          "height": 40,
+          "children": [
+            {
+              "name": "InputBox",
+              "type": "RECTANGLE",
+              "width": 450,
+              "height": 40,
+              "cornerRadius": 5,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.23460613191127777,
+                    "g": 0.2732701301574707,
+                    "b": 0.3365384638309479,
+                    "a": 1,
+                    "hex": "#3c4656"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 4,
+                  "spread": 0,
+                  "offset": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.25,
+                    "hex": "#00000040"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Password",
+              "type": "TEXT",
+              "width": 47,
+              "height": 11,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.5288717150688171,
+                    "g": 0.5229983329772949,
+                    "b": 0.5817307829856873,
+                    "a": 1,
+                    "hex": "#878594"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Password",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "Regular"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "Username",
+          "type": "GROUP",
+          "width": 458,
+          "height": 40,
+          "children": [
+            {
+              "name": "InputBox",
+              "type": "RECTANGLE",
+              "width": 450,
+              "height": 40,
+              "cornerRadius": 5,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.23890532553195953,
+                    "g": 0.272291362285614,
+                    "b": 0.32692307233810425,
+                    "a": 1,
+                    "hex": "#3d4553"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 4,
+                  "spread": 0,
+                  "offset": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.25,
+                    "hex": "#00000040"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Username",
+              "type": "TEXT",
+              "width": 450,
+              "height": 30,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.5288717150688171,
+                    "g": 0.5229983329772949,
+                    "b": 0.5817307829856873,
+                    "a": 1,
+                    "hex": "#878594"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Username\n",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "Regular"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "NONE",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "Create_Title",
+          "type": "TEXT",
+          "width": 381,
+          "height": 41,
+          "fills": "Symbol(figma.mixed)",
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 0,
+              "color": {
+                "r": 0.17307692766189575,
+                "g": 0.17307692766189575,
+                "b": 0.17307692766189575,
+                "a": 0,
+                "hex": "#2c2c2c00"
+              }
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "characters": "Create new account.",
+          "fontSize": 45,
+          "fontName": {
+            "family": "League Spartan",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE"
+        },
+        {
+          "name": "Sub-Title[Upper]",
+          "type": "TEXT",
+          "width": 129,
+          "height": 11,
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 0.41999998688697815,
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.41999998688697815,
+                "hex": "#ffffff6b"
+              }
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "characters": "START A NEW ACCOUNT",
+          "fontSize": 12,
+          "fontName": {
+            "family": "League Spartan",
+            "style": "SemiBold"
+          },
+          "fontWeight": 600,
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE"
+        },
+        {
+          "name": "Top-Bar",
+          "type": "GROUP",
+          "width": 950,
+          "height": 55,
+          "children": [
+            {
+              "name": "Top_Bar_FRAME[HIDDEN]",
+              "type": "RECTANGLE",
+              "width": 950,
+              "height": 55,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0,
+                  "color": {
+                    "r": 0.8509804010391235,
+                    "g": 0.8509804010391235,
+                    "b": 0.8509804010391235,
+                    "a": 0,
+                    "hex": "#d9d9d900"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "IMG_CIRCLE",
+              "type": "VECTOR",
+              "width": 45,
+              "height": 45,
+              "fills": [
+                {
+                  "type": "IMAGE",
+                  "opacity": 1,
+                  "imageHash": "7dc05bd631cdaa32b0987ac99260f99e3b80fbc4",
+                  "scaleMode": "FILL",
+                  "imageTransform": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "App_Title",
+              "type": "TEXT",
+              "width": 117,
+              "height": 24,
+              "fills": "Symbol(figma.mixed)",
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "TradeExec.",
+              "fontSize": "Symbol(figma.mixed)",
+              "fontName": {
+                "family": "Lexend Exa",
+                "style": "SemiBold"
+              },
+              "fontWeight": 600,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Login/Login/Existing",
+      "type": "COMPONENT",
+      "width": 950,
+      "height": 585,
+      "cornerRadius": 10,
+      "layoutMode": "NONE",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.23137255012989044,
+            "g": 0.30980393290519714,
+            "b": 0.4313725531101227,
+            "a": 1,
+            "hex": "#3b4f6e"
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "Background",
+          "type": "GROUP",
+          "width": 986,
+          "height": 585,
+          "children": [
+            {
+              "name": "Image-With-Gradient",
+              "type": "INSTANCE",
+              "width": 891,
+              "height": 585,
+              "layoutMode": "NONE",
+              "primaryAxisSizingMode": "AUTO",
+              "counterAxisSizingMode": "FIXED",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1,
+                    "hex": "#ffffff"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "mainComponent": {
+                "name": "Image-With-Gradient"
+              }
+            },
+            {
+              "name": "Darken",
+              "type": "RECTANGLE",
+              "width": 950,
+              "height": 585,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0.4399999976158142,
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.4399999976158142,
+                    "hex": "#00000070"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            }
+          ]
+        },
+        {
+          "name": "ChangeBttn",
+          "type": "GROUP",
+          "width": 163,
+          "height": 35,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "radius": 10,
+              "spread": 0,
+              "offset": {
+                "x": 1,
+                "y": 1
+              },
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.25,
+                "hex": "#00000040"
+              }
+            }
+          ],
+          "children": [
+            {
+              "name": "ButtonFrame",
+              "type": "RECTANGLE",
+              "width": 163,
+              "height": 35,
+              "cornerRadius": 35,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.3894461989402771,
+                    "g": 0.3947219252586365,
+                    "b": 0.3990384638309479,
+                    "a": 1,
+                    "hex": "#636566"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 4,
+                  "spread": 0,
+                  "offset": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.25,
+                    "hex": "#00000040"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "ButtonText",
+              "type": "TEXT",
+              "width": 82,
+              "height": 11,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1,
+                    "hex": "#ffffff"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Change Method",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "SemiBold"
+              },
+              "fontWeight": 600,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "LoginBttn",
+          "type": "GROUP",
+          "width": 163,
+          "height": 35,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "radius": 10,
+              "spread": 0,
+              "offset": {
+                "x": 1,
+                "y": 1
+              },
+              "color": {
+                "r": 0.22745098173618317,
+                "g": 0.6352941393852234,
+                "b": 0.9725490212440491,
+                "a": 0.25,
+                "hex": "#3aa2f840"
+              }
+            }
+          ],
+          "children": [
+            {
+              "name": "ButtonFrame",
+              "type": "RECTANGLE",
+              "width": 163,
+              "height": 35,
+              "cornerRadius": 35,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.22878143191337585,
+                    "g": 0.6370862722396851,
+                    "b": 0.9711538553237915,
+                    "a": 1,
+                    "hex": "#3aa2f8"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "ButtonText",
+              "type": "TEXT",
+              "width": 28,
+              "height": 11,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1,
+                    "hex": "#ffffff"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Login",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "SemiBold"
+              },
+              "fontWeight": 600,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "Password_Input",
+          "type": "GROUP",
+          "width": 450,
+          "height": 40,
+          "children": [
+            {
+              "name": "InputBox",
+              "type": "RECTANGLE",
+              "width": 450,
+              "height": 40,
+              "cornerRadius": 5,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.23460613191127777,
+                    "g": 0.2732701301574707,
+                    "b": 0.3365384638309479,
+                    "a": 1,
+                    "hex": "#3c4656"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 4,
+                  "spread": 0,
+                  "offset": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.25,
+                    "hex": "#00000040"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "InputTitle",
+              "type": "TEXT",
+              "width": 47,
+              "height": 11,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.5288717150688171,
+                    "g": 0.5229983329772949,
+                    "b": 0.5817307829856873,
+                    "a": 1,
+                    "hex": "#878594"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Password",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "Regular"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "Username_Input",
+          "type": "GROUP",
+          "width": 458,
+          "height": 40,
+          "children": [
+            {
+              "name": "InputBox",
+              "type": "RECTANGLE",
+              "width": 450,
+              "height": 40,
+              "cornerRadius": 5,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.23890532553195953,
+                    "g": 0.272291362285614,
+                    "b": 0.32692307233810425,
+                    "a": 1,
+                    "hex": "#3d4553"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 4,
+                  "spread": 0,
+                  "offset": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "color": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0.25,
+                    "hex": "#00000040"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "InputTitle",
+              "type": "TEXT",
+              "width": 450,
+              "height": 30,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.5288717150688171,
+                    "g": 0.5229983329772949,
+                    "b": 0.5817307829856873,
+                    "a": 1,
+                    "hex": "#878594"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "Username\n",
+              "fontSize": 12,
+              "fontName": {
+                "family": "League Spartan",
+                "style": "Regular"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "NONE",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        },
+        {
+          "name": "SectionTitle",
+          "type": "TEXT",
+          "width": 101,
+          "height": 41,
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1,
+                "hex": "#ffffff"
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 0,
+              "color": {
+                "r": 0.17307692766189575,
+                "g": 0.17307692766189575,
+                "b": 0.17307692766189575,
+                "a": 0,
+                "hex": "#2c2c2c00"
+              }
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "characters": "Login",
+          "fontSize": 45,
+          "fontName": {
+            "family": "League Spartan",
+            "style": "Regular"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE"
+        },
+        {
+          "name": "SectionSubtitle",
+          "type": "TEXT",
+          "width": 83,
+          "height": 11,
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 0.41999998688697815,
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.41999998688697815,
+                "hex": "#ffffff6b"
+              }
+            }
+          ],
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "characters": "START TRADING",
+          "fontSize": 12,
+          "fontName": {
+            "family": "League Spartan",
+            "style": "SemiBold"
+          },
+          "fontWeight": 600,
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE"
+        },
+        {
+          "name": "Top-Bar",
+          "type": "GROUP",
+          "width": 950,
+          "height": 55,
+          "children": [
+            {
+              "name": "Top_Bar_FRAME[HIDDEN]",
+              "type": "RECTANGLE",
+              "width": 950,
+              "height": 55,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 0,
+                  "color": {
+                    "r": 0.8509804010391235,
+                    "g": 0.8509804010391235,
+                    "b": 0.8509804010391235,
+                    "a": 0,
+                    "hex": "#d9d9d900"
+                  }
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "Logo1",
+              "type": "VECTOR",
+              "width": 45,
+              "height": 45,
+              "fills": [
+                {
+                  "type": "IMAGE",
+                  "opacity": 1,
+                  "imageHash": "7dc05bd631cdaa32b0987ac99260f99e3b80fbc4",
+                  "scaleMode": "FILL",
+                  "imageTransform": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER"
+            },
+            {
+              "name": "App_Title",
+              "type": "TEXT",
+              "width": 117,
+              "height": 24,
+              "fills": "Symbol(figma.mixed)",
+              "strokeWeight": 1,
+              "strokeAlign": "OUTSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "characters": "TradeExec.",
+              "fontSize": "Symbol(figma.mixed)",
+              "fontName": {
+                "family": "Lexend Exa",
+                "style": "SemiBold"
+              },
+              "fontWeight": 600,
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "lineHeight": {
+                "unit": "AUTO"
+              },
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "textAutoResize": "WIDTH_AND_HEIGHT",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textContent": [
+    {
+      "name": "Change Method",
+      "text": "Change Method",
+      "path": "Login/Login/Create/Change/Change Method",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Create Account",
+      "text": "Create Account",
+      "path": "Login/Login/Create/Login/Create Account",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Password",
+      "text": "Password",
+      "path": "Login/Login/Create/Password/Password",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Username",
+      "text": "Username\n",
+      "path": "Login/Login/Create/Username/Username",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Create_Title",
+      "text": "Create new account.",
+      "path": "Login/Login/Create/Create_Title",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Sub-Title[Upper]",
+      "text": "START A NEW ACCOUNT",
+      "path": "Login/Login/Create/Sub-Title[Upper]",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "App_Title",
+      "text": "TradeExec.",
+      "path": "Login/Login/Create/Top-Bar/App_Title",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "Change Method",
+      "path": "Login/Login/Login/Existing/ChangeBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "ButtonText",
+      "text": "Login",
+      "path": "Login/Login/Login/Existing/LoginBttn/ButtonText",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "InputTitle",
+      "text": "Password",
+      "path": "Login/Login/Login/Existing/Password_Input/InputTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "InputTitle",
+      "text": "Username\n",
+      "path": "Login/Login/Login/Existing/Username_Input/InputTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionTitle",
+      "text": "Login",
+      "path": "Login/Login/Login/Existing/SectionTitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SectionSubtitle",
+      "text": "START TRADING",
+      "path": "Login/Login/Login/Existing/SectionSubtitle",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "App_Title",
+      "text": "TradeExec.",
+      "path": "Login/Login/Login/Existing/Top-Bar/App_Title",
+      "nodeType": "TEXT"
+    }
+  ]
+}
