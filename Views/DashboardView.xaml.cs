@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TradeExec.ViewModels;
 
 namespace TradeExec.Views
 {
@@ -23,6 +24,7 @@ namespace TradeExec.Views
         public DashboardView()
         {
             InitializeComponent();
+            DataContext = new DashboardViewModel();
         }
     }
 }

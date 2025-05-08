@@ -44,6 +44,7 @@
                       Stroke="#D8DEE9"
                       StrokeThickness="0.5"
                       Margin="0,0,0,50"/>
+                
             </StackPanel>
 
             <!-- Section: Main Menu -->
@@ -56,16 +57,19 @@
 
             <Button Content="Dashboard"
                     Style="{StaticResource FlatSidebarButtonStyle}"
+                    Command="{Binding ShowDashboardCommand}"
                     FontWeight="Light"
-                    Margin="20,0,0,5"/>
+                    Margin="0,0,0,5" Width="120"/>
             <Button Content="Server Status"
                     Style="{StaticResource FlatSidebarButtonStyle}"
+                    Command="{Binding ShowAccountsCommand}"
                     FontWeight="Light"
-                    Margin="20,0,0,5"/>
+                    Margin="0,0,0,5" Width="120"/>
             <Button Content="Accounts"
                     Style="{StaticResource FlatSidebarButtonStyle}"
+                    Command="{Binding ShowServerCommand}"
                     FontWeight="Light"
-                    Margin="20,0,0,20"/>
+                    Margin="0,0,0,5" Width="120"/>
 
             <!-- Section: Support -->
             <TextBlock Text="Support"
@@ -76,8 +80,9 @@
                        Margin="0,0,0,10"/>
             <Button Content="Send Ticket"
                     Style="{StaticResource FlatSidebarButtonStyle}"
+                    Command="{Binding ShowSupportCommand}"
                     FontWeight="Light"
-                    Margin="20,0,0,20"/>
+                    Margin="0,0,0,5" Width="120"/>
         </StackPanel>
 
 
@@ -105,7 +110,7 @@
                 CornerRadius="20"
                 BorderBrush="#2E3440"
                 BorderThickness="1">
-            <!-- Page content goes here -->
+            <ContentControl Content="{Binding CurrentPage}"/>
         </Border>
     </Grid>
 </UserControl>

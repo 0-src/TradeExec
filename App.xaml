@@ -21,11 +21,19 @@
                         <TextBlock Text="{TemplateBinding Content}"
                            Margin="5"
                            FontFamily="League Spartan"
+                           TextAlignment="Center"
                            Foreground="{TemplateBinding Foreground}"/>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <DropShadowEffect x:Key="DefaultShadow"
+                  Color="#2E3440"
+                  Direction="315"
+                  ShadowDepth="1"
+                  BlurRadius="5"
+                  Opacity="0.5" />
 
 
     </Application.Resources>

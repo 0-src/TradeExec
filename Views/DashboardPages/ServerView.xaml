@@ -5,8 +5,80 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TradeExec.Views.DashboardPages"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="470" d:DesignWidth="800">
+    <StackPanel Margin="20">
+
+        <!-- Top Row: Connection Status + Uptime -->
+        <StackPanel Orientation="Horizontal" Margin="0">
+            <!-- Connection Card -->
+            <Border Width="200" Height="105" Background="#1B1F26"
+                    CornerRadius="15" BorderBrush="#2E3440" BorderThickness="1"
+                    Padding="10" Effect="{DynamicResource DefaultShadow}" Margin="0,0,20,0" HorizontalAlignment="Left">
+                <StackPanel>
+                    <TextBlock Text="◎ Connection Status"
+                               FontSize="14" FontFamily="League Spartan"
+                               FontWeight="Light" Foreground="White"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Ellipse x:Name ="statusIcon" Width="6" Height="6" Fill="#3BB2AA" Margin="0,0,5,0"/>
+                        <TextBlock Text="Connected"
+                                   FontSize="18" FontFamily="{StaticResource LeagueSpartan}"
+                                   Foreground="White"/>
+                    </StackPanel>
+                    <TextBlock Text="Ping: 48ms"
+                               FontSize="12" FontFamily="League Spartan"
+                               Foreground="#9A9797" Margin="0,5,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Server Uptime Card -->
+            <Border Width="430" Height="105" Background="#1B1F26"
+                    CornerRadius="15" BorderBrush="#2E3440" BorderThickness="1"
+                    Padding="10" Effect="{DynamicResource DefaultShadow}">
+                <StackPanel>
+                    <TextBlock Text="◎ Server Up-Time"
+                               FontSize="14" FontFamily="{StaticResource LeagueSpartan}"
+                               FontWeight="Light" Foreground="White"/>
+                    <TextBlock Text="3 hours, 40 minutes, 10 seconds"
+                               FontSize="18" FontFamily="{StaticResource LeagueSpartan}"
+                               Foreground="White" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <!-- API Metrics Card -->
+        <Border Width="200" Height="209" Background="#1B1F26"
+                CornerRadius="15" BorderBrush="#2E3440" BorderThickness="1"
+                Padding="10" Effect="{DynamicResource DefaultShadow}" HorizontalAlignment="Left" Margin="0,10,0,10">
+            <StackPanel>
+                <TextBlock Text="◎ API Metrics"
+                           FontSize="14" FontFamily="{StaticResource LeagueSpartan}"
+                           FontWeight="Light" Foreground="White"/>
+                <TextBlock Text="Requests: 24"
+           FontSize="18" FontFamily="{StaticResource LeagueSpartan}"
+           Foreground="White" Margin="0,10,0,0"/>
+
+                <TextBlock Text="Response Time: 17 ms"
+           FontSize="18" FontFamily="{StaticResource LeagueSpartan}"
+           Foreground="White" Margin="0,5,0,0"/>
+
+                <TextBlock Text="Status: 200 OK"
+           FontSize="18" FontFamily="{StaticResource LeagueSpartan}"
+           Foreground="White" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Tunnel Info Card -->
+        <Border Width="650" Height="83" Background="#1B1F26"
+                CornerRadius="15" BorderBrush="#2E3440" BorderThickness="1"
+                Padding="10" Effect="{DynamicResource DefaultShadow}" HorizontalAlignment="Left" Margin="0,5,0,0">
+            <StackPanel>
+                <TextBlock Text="◎ Tunnel Information"
+                           FontSize="14" FontFamily="{StaticResource LeagueSpartan}"
+                           FontWeight="Light" Foreground="White"/>
+                <TextBlock Text="https://sample.ngrok.io"
+                           FontSize="18" FontFamily="{StaticResource LeagueSpartan}"
+                           Foreground="White" Margin="0,10,0,0"/>
+            </StackPanel>
+        </Border>
+    </StackPanel>
 </UserControl>

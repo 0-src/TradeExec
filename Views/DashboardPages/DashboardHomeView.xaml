@@ -6,7 +6,107 @@
              xmlns:local="clr-namespace:TradeExec.Views.DashboardPages"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Top Row: PnL + Web -->
+        <Grid Grid.Row="0" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- PnL -->
+            <Border Grid.Column="0" Height="85" Margin="0,0,10,0"
+                    Background="#1B1F26" CornerRadius="15"
+                    BorderBrush="#2E3440" BorderThickness="1"
+                    Padding="10"
+                    Effect="{DynamicResource DefaultShadow}">
+                <StackPanel>
+                    <TextBlock Text="Today’s PnL:"
+                               FontSize="12"
+                               FontFamily="{StaticResource LeagueSpartan}"
+                               FontWeight="Light"
+                               Foreground="White"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="PnLTextBlock"
+                               Margin="15"
+                               Text="$0.00"
+                               FontSize="20"
+                               FontFamily="{StaticResource LeagueSpartan}"
+                               Foreground="White"
+                               FontWeight="Regular"
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Web Link -->
+            <Border Grid.Column="1" Height="85"
+                    Background="#1B1F26" CornerRadius="15"
+                    BorderBrush="#2E3440" BorderThickness="1"
+                    Padding="10"
+                    Effect="{DynamicResource DefaultShadow}">
+                <StackPanel>
+                    <TextBlock Text="Web Connection"
+                               FontSize="12"
+                               FontFamily="{StaticResource LeagueSpartan}"
+                               FontWeight="Light"
+                               Foreground="White"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="NgrokLinkTextBlock"
+                               Margin="15"
+                               Text="(not connected)"
+                               FontSize="20"
+                               FontFamily="{StaticResource LeagueSpartan}"
+                               Foreground="White"
+                               TextAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Active Accounts -->
+        <Border Grid.Row="1" Height="85" Margin="0,0,0,20"
+                Background="#1B1F26" CornerRadius="15"
+                BorderBrush="#2E3440" BorderThickness="1"
+                Padding="15"
+                Effect="{DynamicResource DefaultShadow}">
+            <StackPanel>
+                <TextBlock Text="Active Accounts"
+                           FontSize="12"
+                           FontFamily="{StaticResource LeagueSpartan}"
+                           FontWeight="Light"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:Name="AccountsTextBlock"
+                           Margin="10"
+                           Text="(no accounts)"
+                           FontSize="16"
+                           FontFamily="{StaticResource LeagueSpartan}"
+                           Foreground="White"
+                           LineHeight="25"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Logs -->
+        <Border Grid.Row="2" Grid.RowSpan="2" MinHeight="200"
+                Background="#1B1F26" CornerRadius="15"
+                BorderBrush="#2E3440" BorderThickness="1"
+                Padding="10"
+                Effect="{DynamicResource DefaultShadow}">
+            <ListBox x:Name="LogList"
+                     Background="Transparent"
+                     BorderThickness="0"
+                     Foreground="White"
+                     FontSize="12"
+                     FontFamily="{StaticResource LeagueSpartan}"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto">
+            </ListBox>
+        </Border>
     </Grid>
 </UserControl>
