@@ -56,6 +56,16 @@ namespace TradeExec.ViewModels
             ToggleModeCommand = new RelayCommand(ToggleMode);
         }
 
+        private async Task TriggerErrorFlags()
+        {
+            UsernameHasError = true;
+            PasswordHasError = true;
+            await Task.Delay(10);
+            UsernameHasError = false;
+            PasswordHasError = false;
+
+        }
+
         private async Task SubmitAsync()
         {
             if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(Password))
@@ -73,8 +83,7 @@ namespace TradeExec.ViewModels
 
                 if (!success)
                 {
-                    UsernameHasError = true;
-                    PasswordHasError = true;
+                    await TriggerErrorFlags();
                 }
             }
             else
@@ -83,8 +92,7 @@ namespace TradeExec.ViewModels
 
                 if (!success)
                 {
-                    UsernameHasError = true;
-                    PasswordHasError = true;
+                    await TriggerErrorFlags();
                 }
             }
 

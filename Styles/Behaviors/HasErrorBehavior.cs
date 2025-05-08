@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 using System.Windows;
+using System.Windows.Media;
 
 namespace TradeExec.Styles.Behaviors
 {
@@ -25,16 +26,22 @@ namespace TradeExec.Styles.Behaviors
         {
             if (d is TextBox textBox && e.NewValue is bool newVal && newVal)
             {
-                var baseStoryboard = Application.Current.TryFindResource("ShakeAnimation") as Storyboard;
-
-                if (baseStoryboard != null)
+                // Ensure the TextBox has a RotateTransform
+                if (textBox.RenderTransform is not RotateTransform)
                 {
-                    Storyboard clone = baseStoryboard.Clone();
-                    Storyboard.SetTarget(clone, textBox);
-                    clone.Begin();
+                    textBox.RenderTransform = new RotateTransform(0);
+                    textBox.RenderTransformOrigin = new Point(0.5, 0.5);
                 }
 
-                // Reset HasError so the next trigger will work
+                // Restart storyboard
+                if (Application.Current.TryFindResource("ShakeAnimation") is Storyboard baseStoryboard)
+                {
+                    var storyboard = baseStoryboard.Clone(); // optional due to x:Shared=False
+                    Storyboard.SetTarget(storyboard, textBox);
+                    storyboard.Begin();
+                }
+
+                // Reset HasError so it's retriggerable
                 Task.Delay(350).ContinueWith(_ =>
                 {
                     Application.Current.Dispatcher.Invoke(() =>

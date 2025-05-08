@@ -65,7 +65,7 @@
                     Width="450"
                     Margin="0,0,0,10"
                     Style="{StaticResource TextBoxWithPlaceholderAndError}"
-                    behaviors:HasErrorBehavior.HasError="{Binding UsernameHasError}"
+                    behaviors:HasErrorBehavior.HasError="{Binding UsernameHasError, Mode=TwoWay}"
                     behaviors:PlaceholderBehavior.Placeholder="Username"/>
 
                 <!-- Password Input -->
@@ -74,7 +74,7 @@
                     Width="450"
                     Margin="0,0,0,10"
                     Style="{StaticResource TextBoxWithPlaceholderAndError}"
-                    behaviors:HasErrorBehavior.HasError="{Binding PasswordHasError}"
+                    behaviors:HasErrorBehavior.HasError="{Binding PasswordHasError, Mode=TwoWay}"
                     behaviors:PlaceholderBehavior.Placeholder="Password"/>
 
 
