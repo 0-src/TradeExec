@@ -1,6 +1,9 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Input;
+using TradeExec.Services;
 
 namespace TradeExec.ViewModels
 {
@@ -22,6 +25,22 @@ namespace TradeExec.ViewModels
             set { _password = value; OnPropertyChanged(); }
         }
 
+        public bool UsernameHasError
+        {
+            get => _usernameHasError;
+            set { _usernameHasError = value; OnPropertyChanged(); }
+        }
+        private bool _usernameHasError;
+
+        public bool PasswordHasError
+        {
+            get => _passwordHasError;
+            set { _passwordHasError = value; OnPropertyChanged(); }
+        }
+        private bool _passwordHasError;
+
+        private readonly AuthService _authService;
+
         public string FormTitle => _isLoginMode ? "Login" : "Create new account.";
         public string FormSubtitle => _isLoginMode ? "START TRADING" : "START A NEW ACCOUNT";
         public string ActionButtonText => _isLoginMode ? "Login" : "Create Account";
@@ -30,21 +49,57 @@ namespace TradeExec.ViewModels
         public ICommand ToggleModeCommand { get; }
 
 
-        public LoginViewModel()
+        public LoginViewModel(AuthService authService)
         {
-            SubmitCommand = new RelayCommand(Submit);
+            _authService = authService;
+            SubmitCommand = new RelayCommand(async () => await SubmitAsync());
             ToggleModeCommand = new RelayCommand(ToggleMode);
         }
 
-        private void Submit()
+        private async Task SubmitAsync()
         {
+            if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(Password))
+            {
+                UsernameHasError = string.IsNullOrWhiteSpace(Username);
+                PasswordHasError = string.IsNullOrWhiteSpace(Password);
+                return;
+            }
+
+            bool success;
+
             if (_isLoginMode)
             {
-                System.Diagnostics.Debug.WriteLine($"[LOGIN] {Username} / {Password}");
+                success = _authService.Login(Username, Password);
+
+                if (!success)
+                {
+                    UsernameHasError = true;
+                    PasswordHasError = true;
+                }
             }
             else
             {
-                System.Diagnostics.Debug.WriteLine($"[CREATE] {Username} / {Password}");
+                success = await _authService.CreateAccountAsync(Username, Password);
+
+                if (!success)
+                {
+                    UsernameHasError = true;
+                    PasswordHasError = true;
+                }
+            }
+
+            if (success)
+            {
+                // Navigate to Dashboard
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    var main = (MainWindow)Application.Current.MainWindow;
+                    main.NavigateToDashboard();
+                });
+            }
+            else
+            {
+                Debug.WriteLine("Login or account creation failed.");
             }
         }
 

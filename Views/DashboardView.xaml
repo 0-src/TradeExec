@@ -5,6 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TradeExec.Views"
              mc:Ignorable="d" 
+             Width="950"
+             Height="585"
              d:DesignHeight="585" d:DesignWidth="950"
              Background="#1B1F26"
              ClipToBounds="True">
@@ -27,7 +29,7 @@
                            FontWeight="SemiBold"
                            Foreground="White"
                            FontFamily="{StaticResource LeagueSpartan}"
-                           Margin="0,0,0,20">                    
+                           Margin="0,0,0,35">                    
                     <TextBlock Text="Trade" Foreground="#6B9AFF"/>Exec<TextBlock Text="." Foreground="#6B9AFF" FontSize="30"/>
                 </TextBlock>
 
@@ -38,12 +40,13 @@
                            FontWeight="Bold"
                            Foreground="White"
                            FontFamily="{StaticResource LeagueSpartan}"
-                           Margin="0,0,0,10"/>
+                           Margin="0,0,0,10"
+                           HorizontalAlignment="Center"/>
 
                 <Line X1="0" X2="120"
                       Stroke="#D8DEE9"
                       StrokeThickness="0.5"
-                      Margin="0,0,0,50"/>
+                      Margin="0,0,0,15"/>
                 
             </StackPanel>
 
@@ -62,12 +65,12 @@
                     Margin="0,0,0,5" Width="120"/>
             <Button Content="Server Status"
                     Style="{StaticResource FlatSidebarButtonStyle}"
-                    Command="{Binding ShowAccountsCommand}"
+                    Command="{Binding ShowServerCommand}"
                     FontWeight="Light"
                     Margin="0,0,0,5" Width="120"/>
             <Button Content="Accounts"
                     Style="{StaticResource FlatSidebarButtonStyle}"
-                    Command="{Binding ShowServerCommand}"
+                    Command="{Binding ShowAccountsCommand}"
                     FontWeight="Light"
                     Margin="0,0,0,5" Width="120"/>
 
@@ -93,24 +96,24 @@
                     Margin="0,10,10,0">
             <Ellipse Width="22" Height="22" Margin="0,0,5,0">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Extra/Images/min.png" Stretch="UniformToFill"/>
+                    <ImageBrush ImageSource="/Assets/min.png" Stretch="UniformToFill"/>
                 </Ellipse.Fill>
             </Ellipse>
             <Ellipse Width="22" Height="22">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Extra/Images/close.png" Stretch="UniformToFill"/>
+                    <ImageBrush ImageSource="/Assets/close.png" Stretch="UniformToFill"/>
                 </Ellipse.Fill>
             </Ellipse>
         </StackPanel>
 
         <!-- Content Frame -->
         <Border Grid.Column="1"
-                Margin="20,40,-30,-35"
+                Margin="20,60,-30,-35"
                 Background="#8021252D"
                 CornerRadius="20"
                 BorderBrush="#2E3440"
                 BorderThickness="1">
-            <ContentControl Content="{Binding CurrentPage}"/>
+            <ContentControl Content="{Binding CurrentPage}" Margin="0,-1,30,38"/>
         </Border>
     </Grid>
 </UserControl>

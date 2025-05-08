@@ -4,38 +4,55 @@
              xmlns:local="clr-namespace:TradeExec"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <FontFamily x:Key="LeagueSpartan">pack://application:,,,/Assets/Fonts/#League Spartan</FontFamily>
+        <ResourceDictionary>
 
-        <Style x:Key="FlatSidebarButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontFamily" Value="{StaticResource LeagueSpartan}"/>
-            <Setter Property="FontSize" Value="12"/>
-            <Setter Property="FontWeight" Value="Normal"/>
-            <Setter Property="HorizontalAlignment" Value="Left"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Padding" Value="0"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <TextBlock Text="{TemplateBinding Content}"
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Inputs.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <FontFamily x:Key="LeagueSpartan">pack://application:,,,/Assets/Fonts/#League Spartan</FontFamily>
+
+            <Style x:Key="FlatSidebarButtonStyle" TargetType="Button">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontFamily" Value="{StaticResource LeagueSpartan}"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontWeight" Value="Normal"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <TextBlock Text="{TemplateBinding Content}"
                            Margin="5"
                            FontFamily="League Spartan"
                            TextAlignment="Center"
                            Foreground="{TemplateBinding Foreground}"/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
 
-        <DropShadowEffect x:Key="DefaultShadow"
+            <DropShadowEffect x:Key="DefaultShadow"
                   Color="#2E3440"
                   Direction="315"
                   ShadowDepth="1"
                   BlurRadius="5"
                   Opacity="0.5" />
 
+            <Storyboard x:Key="ShakeAnimation">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                    <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0" />
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.05" Value="-6" />
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.10" Value="6" />
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.15" Value="-3" />
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.20" Value="3" />
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
 
+        </ResourceDictionary>
     </Application.Resources>
 
 </Application>

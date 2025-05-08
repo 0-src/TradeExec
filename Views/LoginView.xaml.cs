@@ -10,7 +10,7 @@ namespace TradeExec.Views
         public LoginView()
         {
             InitializeComponent();
-            _vm = new LoginViewModel();
+            _vm = new LoginViewModel(new Services.AuthService());
             this.DataContext = _vm;
 
             _vm.OnModeSwitched += AnimateFormModeSwitch;

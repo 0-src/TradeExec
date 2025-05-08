@@ -9,17 +9,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Account.png" />
     <None Remove="Assets\bg-gradient.png" />
+    <None Remove="Assets\cloud.jpg" />
     <None Remove="Assets\Fonts\LeagueSpartan-VariableFont_wght.ttf" />
+    <None Remove="Extra\Images\close.png" />
+    <None Remove="Extra\Images\icons8-help-24.png" />
+    <None Remove="Extra\Images\icons8-info-64.png" />
+    <None Remove="Extra\Images\icons8-partly-cloudy-day-100.png" />
+    <None Remove="Extra\Images\icons8-server-24.png" />
+    <None Remove="Extra\Images\icons8-x-24.png" />
+    <None Remove="Extra\Images\icons8-x-96.png" />
+    <None Remove="Extra\Images\Icon_TradeExec.ico" />
+    <None Remove="Extra\Images\min.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Assets\bg-gradient.png" />
+    <Resource Include="Assets\Account.png" />
+    <Resource Include="Assets\bg-gradient.png" />
+    <Resource Include="Assets\cloud.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Styles\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +42,15 @@
     <Resource Include="Assets\Fonts\LeagueSpartan-VariableFont_wght.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\close.png" />
+    <Resource Include="Extra\Images\icons8-help-24.png" />
+    <Resource Include="Extra\Images\icons8-info-64.png" />
+    <Resource Include="Extra\Images\icons8-partly-cloudy-day-100.png" />
+    <Resource Include="Extra\Images\icons8-server-24.png" />
+    <Resource Include="Extra\Images\icons8-x-24.png" />
+    <Resource Include="Extra\Images\icons8-x-96.png" />
+    <Resource Include="Extra\Images\Icon_TradeExec.ico" />
+    <Resource Include="Assets\min.png" />
   </ItemGroup>
 
   <ItemGroup>
