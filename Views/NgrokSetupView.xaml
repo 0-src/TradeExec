@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TradeExec.Views"
              mc:Ignorable="d" 
+             Height="585" Width="950"
              d:DesignHeight="585" d:DesignWidth="950">
     <Grid>
         <Image Source="/Assets/bg-gradient.png" Stretch="Fill" />
@@ -68,7 +69,7 @@
                                      <LineBreak/>
                                  
                                      <Run Text="4. " FontWeight="Bold"/>
-                                     <Run Text="Enter the domain in the following:" />
+                                     <Run Text="Enter the domain in the following and click enter after pasting:" />
                                      <LineBreak/>
                                      <LineBreak/>
                     </TextBlock>
@@ -89,13 +90,40 @@
                                 BorderThickness="0"
                                 Padding="10,0"
                                 VerticalContentAlignment="Center"
-                                Margin="5,0,0,0">
-                                <TextBox.InputBindings>
-                                    <KeyBinding Key="Enter"
-                                        Command="{Binding SaveAndContinueCommand}" />
-                                </TextBox.InputBindings>
+                                Margin="5,0,0,0"
+                                AcceptsReturn="False">
                             </TextBox>
                         </WrapPanel>
+                        <Button Content="Save and Continue"
+                                Command="{Binding SaveAndContinueCommand}"
+                                Width="200"
+                                Height="35"
+                                Margin="0,20,0,0"
+                                HorizontalAlignment="Center"
+                                FontFamily="{StaticResource LeagueSpartan}"
+                                FontSize="14"
+                                Background="#6B9AFF"
+                                Foreground="White"
+                                BorderThickness="0"
+                                Cursor="Hand">
+                            <Button.RenderTransform>
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </Button.RenderTransform>
+                            <Button.Style>
+                                <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#5583F6"/>
+                                            <Setter Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
                     </StackPanel>
                 </Border>
             </StackPanel>

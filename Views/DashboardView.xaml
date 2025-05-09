@@ -35,13 +35,15 @@
 
 
 
-                <TextBlock Text="Welcome, {User}"
-                           FontSize="12"
-                           FontWeight="Bold"
+                <TextBlock FontSize="12"
+                           FontWeight="Normal"
                            Foreground="White"
                            FontFamily="{StaticResource LeagueSpartan}"
                            Margin="0,0,0,10"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center">
+                        <Run Text="Welcome, " />
+                        <Run Text="{Binding UsernameText}" FontWeight="Bold" />
+                </TextBlock>
 
                 <Line X1="0" X2="120"
                       Stroke="#D8DEE9"
@@ -59,20 +61,20 @@
                        Margin="0,0,0,10"/>
 
             <Button Content="Dashboard"
-                    Style="{StaticResource FlatSidebarButtonStyle}"
-                    Command="{Binding ShowDashboardCommand}"
-                    FontWeight="Light"
-                    Margin="0,0,0,5" Width="120"/>
+                Tag="Dashboard"
+                Style="{StaticResource SidebarSelectableButtonStyle}"
+                Command="{Binding ShowDashboardCommand}"
+                Margin="0,0,0,5" Width="120"/>
             <Button Content="Server Status"
-                    Style="{StaticResource FlatSidebarButtonStyle}"
-                    Command="{Binding ShowServerCommand}"
-                    FontWeight="Light"
-                    Margin="0,0,0,5" Width="120"/>
+                Tag="Server"
+                Style="{StaticResource SidebarSelectableButtonStyle}"
+                Command="{Binding ShowServerCommand}"
+                Margin="0,0,0,5" Width="120"/>
             <Button Content="Accounts"
-                    Style="{StaticResource FlatSidebarButtonStyle}"
-                    Command="{Binding ShowAccountsCommand}"
-                    FontWeight="Light"
-                    Margin="0,0,0,5" Width="120"/>
+                Tag="Accounts"
+                Style="{StaticResource SidebarSelectableButtonStyle}"
+                Command="{Binding ShowAccountsCommand}"
+                Margin="0,0,0,5" Width="120"/>
 
             <!-- Section: Support -->
             <TextBlock Text="Support"
@@ -82,10 +84,10 @@
                        Foreground="White"
                        Margin="0,0,0,10"/>
             <Button Content="Send Ticket"
-                    Style="{StaticResource FlatSidebarButtonStyle}"
-                    Command="{Binding ShowSupportCommand}"
-                    FontWeight="Light"
-                    Margin="0,0,0,5" Width="120"/>
+                Tag="Support"
+                Style="{StaticResource SidebarSelectableButtonStyle}"
+                Command="{Binding ShowSupportCommand}"
+                Margin="0,0,0,5" Width="120"/>
         </StackPanel>
 
 

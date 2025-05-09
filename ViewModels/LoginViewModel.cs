@@ -75,39 +75,41 @@ namespace TradeExec.ViewModels
                 return;
             }
 
-            bool success;
-
             if (_isLoginMode)
             {
-                success = _authService.Login(Username, Password);
-
+                bool success = _authService.Login(Username, Password);
                 if (!success)
                 {
-                    await TriggerErrorFlags();
+                    UsernameHasError = true;
+                    PasswordHasError = true;
+                    return;
                 }
-            }
-            else
-            {
-                success = await _authService.CreateAccountAsync(Username, Password);
 
-                if (!success)
-                {
-                    await TriggerErrorFlags();
-                }
-            }
-
-            if (success)
-            {
-                // Navigate to Dashboard
                 Application.Current.Dispatcher.Invoke(() =>
                 {
                     var main = (MainWindow)Application.Current.MainWindow;
+                    SessionManager.CurrentUser = _authService.GetUser(Username);
                     main.NavigateToDashboard();
                 });
             }
             else
             {
-                Debug.WriteLine("Login or account creation failed.");
+                var newUser = await _authService.CreateAccountAsync(Username, Password);
+                if (newUser == null)
+                {
+                    UsernameHasError = true;
+                    PasswordHasError = true;
+                    Debug.WriteLine("Login or account creation failed.");
+                    return;
+                }
+
+
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    var main = (MainWindow)Application.Current.MainWindow;
+                    SessionManager.CurrentUser = newUser;
+                    main.NavigateToNgrokSetup(newUser);
+                });
             }
         }
 

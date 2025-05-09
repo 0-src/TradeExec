@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using TradeExec.Services;
 
 namespace TradeExec.ViewModels
 {
@@ -20,14 +21,20 @@ namespace TradeExec.ViewModels
         public ICommand SaveAndContinueCommand { get; }
 
         public event Action OnContinueRequested;
+        private readonly UserAccount _user;
+        private readonly AuthService _authService;
 
-        public NgrokSetupViewModel()
+        public NgrokSetupViewModel(UserAccount user, AuthService authService)
         {
+            _user = user;
+            _authService = authService;
+
             NgrokUrl = Properties.Settings.Default.NgrokWebhookUrl;
             SaveAndContinueCommand = new RelayCommand(SaveAndContinue);
         }
 
-        private void SaveAndContinue()
+
+        private async void SaveAndContinue()
         {
             if (string.IsNullOrWhiteSpace(NgrokUrl))
                 return;
@@ -35,6 +42,7 @@ namespace TradeExec.ViewModels
             Properties.Settings.Default.NgrokWebhookUrl = NgrokUrl;
             Properties.Settings.Default.Save();
 
+            await _authService.AuthNgrok(_user.Username, NgrokUrl);
             OnContinueRequested?.Invoke();
         }
 
