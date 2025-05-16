@@ -10,7 +10,7 @@
              d:DesignHeight="585" d:DesignWidth="950"
              Background="#1B1F26"
              ClipToBounds="True">
-    <Grid>
+    <Grid MouseDown="DragWindow">
         <!-- Layout -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="170"/>
@@ -96,16 +96,31 @@
                     HorizontalAlignment="Right"
                     VerticalAlignment="Top"
                     Margin="0,10,10,0">
-            <Ellipse Width="22" Height="22" Margin="0,0,5,0">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Assets/min.png" Stretch="UniformToFill"/>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse Width="22" Height="22">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Assets/close.png" Stretch="UniformToFill"/>
-                </Ellipse.Fill>
-            </Ellipse>
+
+            <!-- Minimize Button -->
+            <Button Width="22" Height="22"
+            Background="Transparent"
+            BorderThickness="0"
+            Click="Minimize_Click">
+                <Ellipse Width="22" Height="22">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Assets/min.png" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Button>
+
+            <!-- Close Button -->
+            <Button Width="22" Height="22" Margin="10,0,0,0"
+            Background="Transparent"
+            BorderThickness="0"
+            Click="Close_Click">
+                <Ellipse Width="22" Height="22">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Assets/close.png" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>            
+            </Button>
+
         </StackPanel>
 
         <!-- Content Frame -->

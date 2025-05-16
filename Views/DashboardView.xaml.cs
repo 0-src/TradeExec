@@ -26,5 +26,23 @@ namespace TradeExec.Views
             InitializeComponent();
             DataContext = new DashboardViewModel();
         }
+
+        private void Minimize_Click(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).WindowState = WindowState.Minimized;
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Close();
+        }
+
+        private void DragWindow(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                Window.GetWindow(this)?.DragMove();
+            }
+        }
     }
 }
