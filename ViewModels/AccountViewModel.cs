@@ -5,12 +5,16 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using TradeExec.Services;
 
 namespace TradeExec.ViewModels
 {
     public class AccountViewModel : INotifyPropertyChanged
     {
+
+        public ICommand DeleteCommand { get; }
+
         public string Account => Snapshot.Account;
         public string Balance => Snapshot.Balance;
         public string NetLiq => Snapshot.NetLiq;
@@ -40,12 +44,18 @@ namespace TradeExec.ViewModels
             get => _isActive;
             set { _isActive = value; OnPropertyChanged(); }
         }
+        public Action<AccountViewModel> OnDeleteRequested { get; set; }
 
         public AccountViewModel(AccountSnapshot snapshot, string initialStrategy = "DEMO")
         {
             Snapshot = snapshot;
             Strategy = initialStrategy;
+
+            DeleteCommand = new RelayCommand(() => OnDeleteRequested?.Invoke(this));
         }
+
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)

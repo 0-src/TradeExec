@@ -38,6 +38,8 @@ namespace TradeExec.ViewModels
 
         public ObservableCollection<AccountViewModel> Accounts { get; } = new();
         private Dictionary<string, string> _strategies = StrategyStore.LoadStrategies();
+        private readonly HashSet<string> _deletedAccounts = new();
+
 
         private string _usernameText;
         public string UsernameText
@@ -89,6 +91,9 @@ namespace TradeExec.ViewModels
         }
         private void OnSnapshotUpdated(string account, AccountSnapshot snapshot)
         {
+            if (_deletedAccounts.Contains(account))
+                return;
+
             Application.Current.Dispatcher.Invoke(() =>
             {
                 var existing = Accounts.FirstOrDefault(a => a.Account == account);
@@ -112,6 +117,12 @@ namespace TradeExec.ViewModels
                     };
 
                     Accounts.Add(vm);
+
+                    vm.OnDeleteRequested = vmToDelete =>
+                    {
+                        Accounts.Remove(vmToDelete);
+                        _deletedAccounts.Add(vmToDelete.Account);
+                    };
                 }
             });
         }

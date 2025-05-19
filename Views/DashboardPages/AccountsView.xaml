@@ -64,7 +64,7 @@
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="Focusable" Value="False"/>
-                        <Setter Property="IsHitTestVisible" Value="False"/>
+                        <Setter Property="IsHitTestVisible" Value="True"/>
                         <Setter Property="Background" Value="Transparent"/>
                     </Style>
                 </ListView.ItemContainerStyle>
@@ -108,11 +108,11 @@
                                         Margin="0,0,0,2"/>
 
                                     <StackPanel Orientation="Horizontal" Margin="12">
-                                        <TextBlock Text="Balance:" Foreground="White"/>
+                                        <TextBlock Text="Bal: " Foreground="White"/>
                                         <TextBlock Text="{Binding NetLiq}" Foreground="White" Padding="0,0,5,0"/>
-                                        <TextBlock Text="Unrealized:" Foreground="White"/>
+                                        <TextBlock Text="Unrealized: " Foreground="White"/>
                                         <TextBlock Text="{Binding Unrealized}" Foreground="White" Padding="0,0,5,0"/>
-                                        <TextBlock Text="Realized:" Foreground="White"/>
+                                        <TextBlock Text="Realized: " Foreground="White"/>
                                         <TextBlock Text="{Binding Realized}" Foreground="White" Padding="0,0,5,0"/>
                                     </StackPanel>
                                 </StackPanel>
@@ -142,6 +142,7 @@
                                         BorderThickness="0"
                                         Margin="0,0,15,0"/>
                                     <Button Content="Delete"
+                                        Command="{Binding DeleteCommand}"
                                         Width="75" Height="30"
                                         Background="#1E222A"
                                         Foreground="White"
