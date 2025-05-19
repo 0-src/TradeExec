@@ -4,6 +4,8 @@
 
 Revamped from the original V1-R project, TradeExec offers better UI, easier account control, integrated logging, and fast access to server metrics—all without unnecessary complexity.
 
+TradeExec leverages NinjaTrader's Add-on Library to ensure faster executions and more dynamic information logging.
+
 ---
 
 ## 🧭 Overview
@@ -28,14 +30,14 @@ No manual build or Visual Studio setup required.
 
 ## 🚀 Features
 
-| Feature                  | Description                                                       |
-| ------------------------ | ----------------------------------------------------------------- |
-| **Execution Relay**      | Relays TradingView webhook alerts to NinjaTrader via `client.dll` |
-| **Static Webhook Setup** | Quick setup flow for static `ngrok` URLs                          |
-| **Execution Log Panel**  | Built-in log viewer for real-time execution tracking              |
-| **Server Metrics**       | Internal status and metric display in the Dashboard               |
-| **Account Control**      | Simple profile switching stored safely in `AppData`               |
-| **Support Tab**          | Submit logs and report issues directly from the app               |
+| Feature                  | Description                                                          |
+| ------------------------ | -----------------------------------------------------------------    |
+| **Execution Relay**      | Relays TradingView webhook alerts to NinjaTrader via a custom `Addon`|
+| **Static Webhook Setup** | Quick setup flow for static `ngrok` URLs                             |
+| **Execution Log Panel**  | Built-in log viewer for real-time execution tracking                 |
+| **Server Metrics**       | Internal status and metric display in the Dashboard                  |
+| **Account Control**      | Simple profile switching stored safely in `AppData`                  |
+| **Support Tab**          | Submit logs and report issues directly from the app                  |
 
 ---
 
