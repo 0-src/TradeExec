@@ -15,9 +15,20 @@
             Padding="20"
             Effect="{DynamicResource DefaultShadow}">
 
-        <StackPanel>
-            <!-- Title -->
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,20">
+        <!-- ✅ Replaced StackPanel with Grid -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Header section -->
+                <RowDefinition Height="*"/>
+                <!-- Scrollable content -->
+            </Grid.RowDefinitions>
+
+            <!-- Header -->
+            <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        Margin="0,0,0,20"
+                        Grid.Row="0">
                 <Ellipse Width="18" Height="18" Margin="0,0,10,0">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="/Assets/Account.png" Stretch="UniformToFill"/>
@@ -30,67 +41,119 @@
                            Foreground="White"/>
             </StackPanel>
 
-            <Separator Margin="0,0,0,20" Background="White" Height="1"/>
+            <!-- Scrollable ListView -->
+            <ListView Grid.Row="1"
+                      ItemsSource="{Binding Accounts}"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.CanContentScroll="True"
+                      VirtualizingPanel.IsVirtualizing="True"
+                      VirtualizingPanel.VirtualizationMode="Standard"
+                      SelectionMode="Single"
+                      IsHitTestVisible="True"
+                      Focusable="False"
+                      BorderThickness="0"
+                      Background="Transparent"
+                      Margin="0,0,0,15">
 
-            <!-- Account Rows -->
-            <ItemsControl ItemsSource="{Binding Accounts}">
-                <ItemsControl.ItemTemplate>
+                <ListView.Resources>
+                    <Style TargetType="ScrollBar" x:Key="VerticalScrollBarOverride">
+                        <Setter Property="Orientation" Value="Vertical"/>
+                    </Style>
+                </ListView.Resources>
+
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Focusable" Value="False"/>
+                        <Setter Property="IsHitTestVisible" Value="False"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Border Height="45"
-                    Background="#0FD9D9D9"
-                    CornerRadius="5"
-                    Padding="10"
-                    Margin="0,0,0,15"
-                    Effect="{DynamicResource DefaultShadow}">
+                        <Border Height="Auto"
+                                Background="#0FD9D9D9"
+                                CornerRadius="5"
+                                Padding="10"
+                                Margin="0,0,0,10"
+                                Width="625"
+                                Effect="{DynamicResource DefaultShadow}">
 
-                            <DockPanel LastChildFill="False" VerticalAlignment="Center">
-                                <!-- Toggle -->
-                                <CheckBox IsChecked="{Binding IsActive}"
-                              Width="18" Height="18"
-                              VerticalAlignment="Center"
-                              Margin="0,0,10,0"/>
+                            <Grid VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!-- CheckBox -->
+                                    <ColumnDefinition Width="*"/>
+                                    <!-- Account Info -->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!-- Strategy TextBox -->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!-- Buttons -->
+                                </Grid.ColumnDefinitions>
+
+                                <!-- CheckBox (slightly overlapping left edge) -->
+                                <CheckBox Grid.Column="0"
+                                    IsChecked="{Binding IsActive}"
+                                    Width="18" Height="18"
+                                    VerticalAlignment="Center"
+                                    Margin="-15,0,10,0"/>
+                                <!-- Negative left margin for edge-overlap -->
 
                                 <!-- Account Info -->
-                                <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
-                                    <TextBlock Text="{Binding AccountName}"
-                                   FontSize="20"
-                                   FontFamily="{StaticResource LeagueSpartan}"
-                                   Foreground="White"
-                                   VerticalAlignment="Center"
-                                   Margin="0,0,30,0"/>
-                                    <TextBlock Text="{Binding Strategy}"
-                                   FontSize="20"
-                                   FontFamily="{StaticResource LeagueSpartan}"
-                                   Foreground="White"
-                                   VerticalAlignment="Center"/>
+                                <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding Account}"
+                                        FontSize="20"
+                                        FontFamily="{StaticResource LeagueSpartan}"
+                                        Foreground="White"
+                                        Margin="0,0,0,2"/>
+
+                                    <StackPanel Orientation="Horizontal" Margin="12">
+                                        <TextBlock Text="Balance:" Foreground="White"/>
+                                        <TextBlock Text="{Binding NetLiq}" Foreground="White" Padding="0,0,5,0"/>
+                                        <TextBlock Text="Unrealized:" Foreground="White"/>
+                                        <TextBlock Text="{Binding Unrealized}" Foreground="White" Padding="0,0,5,0"/>
+                                        <TextBlock Text="Realized:" Foreground="White"/>
+                                        <TextBlock Text="{Binding Realized}" Foreground="White" Padding="0,0,5,0"/>
+                                    </StackPanel>
                                 </StackPanel>
 
-                                <DockPanel DockPanel.Dock="Right" />
+                                <!-- Strategy input -->
+                                <TextBox Grid.Column="2"
+                                    Text="{Binding Strategy, UpdateSourceTrigger=PropertyChanged}"
+                                    Width="120"
+                                    Height="28"
+                                    VerticalAlignment="Center"
+                                    Margin="20,0"
+                                    FontSize="16"
+                                    FontFamily="{StaticResource LeagueSpartan}"
+                                    Background="#1E222A"
+                                    Foreground="White"
+                                    BorderThickness="0"
+                                    Padding="4"/>
 
-                                <!-- Buttons (can be hooked with commands later) -->
-                                <Button Content="Edit"
-                            Width="75" Height="30"
-                            Margin="0,0,10,0"
-                            Background="#1E222A"
-                            Foreground="White"
-                            FontSize="16"
-                            FontFamily="{StaticResource LeagueSpartan}"
-                            BorderThickness="0"
-                            VerticalAlignment="Center"/>
-
-                                <Button Content="Delete"
-                            Width="75" Height="30"
-                            Background="#1E222A"
-                            Foreground="White"
-                            FontSize="16"
-                            FontFamily="{StaticResource LeagueSpartan}"
-                            BorderThickness="0"
-                            VerticalAlignment="Center"/>
-                            </DockPanel>
+                                <!-- Buttons -->
+                                <StackPanel Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Center" Margin="8">
+                                    <Button Content="Edit"
+                                        Width="75" Height="30"
+                                        Background="#1E222A"
+                                        Foreground="White"
+                                        FontSize="16"
+                                        FontFamily="{StaticResource LeagueSpartan}"
+                                        BorderThickness="0"
+                                        Margin="0,0,15,0"/>
+                                    <Button Content="Delete"
+                                        Width="75" Height="30"
+                                        Background="#1E222A"
+                                        Foreground="White"
+                                        FontSize="16"
+                                        FontFamily="{StaticResource LeagueSpartan}"
+                                        BorderThickness="0"/>
+                                </StackPanel>
+                            </Grid>
                         </Border>
                     </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </StackPanel>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </Border>
 </UserControl>

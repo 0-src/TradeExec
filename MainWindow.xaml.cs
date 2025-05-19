@@ -14,16 +14,13 @@ namespace TradeExec
     public partial class MainWindow : Window
     {
         private readonly AuthService _authService = new AuthService();
-        private WebService _webService;
-        private DataStore _dataStore;
+
 
         public MainWindow()
         {
             InitializeComponent();
 
             MainContent.Content = new LoginView();
-
-            DebugCommands();
         }
 
         public void NavigateToNgrokSetup(UserAccount user)
@@ -34,19 +31,6 @@ namespace TradeExec
             };
         }
 
-        public async void DebugCommands()
-        {
-            _dataStore = new DataStore();
-            _webService = new WebService(_dataStore);
-
-            var cmd1 = CommandModel.CreateQueryAcct("Sim101");
-            var cmd2 = CommandModel.CreateQueryAcct("*");
-
-            await _webService.StartAsync();
-            Debug.WriteLine("RAN?!");
-
-            await _webService.SendCommandAsync(cmd1);
-        }
 
         public void NavigateToDashboard()
         {
@@ -57,7 +41,6 @@ namespace TradeExec
 
         protected override void OnClosed(EventArgs e)
         {
-            _webService?.Dispose();
             base.OnClosed(e);
         }
     }

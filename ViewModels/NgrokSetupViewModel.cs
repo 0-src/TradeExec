@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using TradeExec.Models;
 using TradeExec.Services;
 
 namespace TradeExec.ViewModels
@@ -45,6 +46,7 @@ namespace TradeExec.ViewModels
             await _authService.AuthNgrok(_user.Username, NgrokUrl);
             OnContinueRequested?.Invoke();
         }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)

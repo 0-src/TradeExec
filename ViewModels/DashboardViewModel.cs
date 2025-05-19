@@ -1,7 +1,10 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using TradeExec.Models;
 using TradeExec.Services;
 using TradeExec.Views.DashboardPages;
 
@@ -9,6 +12,7 @@ namespace TradeExec.ViewModels
 {
     public class DashboardViewModel : INotifyPropertyChanged
     {
+
         private UserControl _currentPage;
         public UserControl CurrentPage
         {
@@ -32,6 +36,9 @@ namespace TradeExec.ViewModels
         public ICommand ShowServerCommand { get; }
         public ICommand ShowSupportCommand { get; }
 
+        public ObservableCollection<AccountViewModel> Accounts { get; } = new();
+        private Dictionary<string, string> _strategies = StrategyStore.LoadStrategies();
+
         private string _usernameText;
         public string UsernameText
         {
@@ -39,8 +46,16 @@ namespace TradeExec.ViewModels
             set { _usernameText = value; OnPropertyChanged(); }
         }
 
+        static async Task RequestAllAccountsAsync()
+        {
+            var cmd = CommandModel.CreateQueryAcct("*");
+            await App.SharedWebService.SendCommandAsync(cmd);
+        }
+
         public DashboardViewModel()
         {
+            App.SharedDataStore.SnapshotUpdated += OnSnapshotUpdated;
+            _ = RequestAllAccountsAsync();
 
 
             CurrentPage = new DashboardHomeView();
@@ -72,8 +87,38 @@ namespace TradeExec.ViewModels
                 ActivePage = "Support";
             });
         }
+        private void OnSnapshotUpdated(string account, AccountSnapshot snapshot)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                var existing = Accounts.FirstOrDefault(a => a.Account == account);
+                if (existing != null)
+                {
+                    existing.UpdateSnapshot(snapshot);
+                }
+                else
+                {
+                    var strategy = _strategies.TryGetValue(account, out var s) ? s : "";
 
-        public event PropertyChangedEventHandler PropertyChanged;
+                    var vm = new AccountViewModel(snapshot, strategy);
+
+                    vm.PropertyChanged += (_, e) =>
+                    {
+                        if (e.PropertyName == nameof(AccountViewModel.Strategy))
+                        {
+                            _strategies[account] = vm.Strategy;
+                            StrategyStore.SaveStrategies(_strategies);
+                        }
+                    };
+
+                    Accounts.Add(vm);
+                }
+            });
+        }
+
+
+
+        public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }

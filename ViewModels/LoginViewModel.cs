@@ -89,6 +89,7 @@ namespace TradeExec.ViewModels
                 {
                     var main = (MainWindow)Application.Current.MainWindow;
                     SessionManager.CurrentUser = _authService.GetUser(Username);
+                    
                     main.NavigateToDashboard();
                 });
             }
