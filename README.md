@@ -82,4 +82,4 @@ Take a look at the full interface redesign in Figma:
 
 ## 📄 License
 
-MIT License
+GPL-3.0 license
